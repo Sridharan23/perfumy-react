@@ -1,13 +1,103 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+}
+ 
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px 20px ;
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  color: gray;
+
+}
+.nav li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.search{
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  margin-bottom: 50px;
+}
+.input{
+  width: 80%;
+  font-size: 22px;
+  border: black 2px solid;
+  border-radius: 2PX;
+  padding: 5px;
+}
+.input:focus{
+  outline: none;
+
+}
+.box img{
+  width: 100%;
+  height: 100%;
+}
+.box p{
+  width: 90%;
+  padding: 10px;
+}
+.product{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.box{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: black solid 3px;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.box:hover{
+  color: white;
+  background-color: black;
+}
+
+.about{
+  margin:40px 20px ;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content{
+  font-size: 20px;
+}
+
+.footer{
+  background-color: black;
+  padding: 20px;
+
+}
+
+.contact{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.f-content{
+  color: gray;
+  font-size: 20px;
+  text-align: center;
 }
